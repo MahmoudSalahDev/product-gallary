@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import {  createHashRouter, RouterProvider } from "react-router-dom"
 import Layout from "./Components/Layout/Layout.jsx"
 import Home from "./Pages/Home/Home.jsx"
 import NotFound from "./Pages/NotFound/NotFound.jsx"
@@ -8,7 +8,7 @@ import Cart from "./Pages/Cart/Cart.jsx"
 import { Toaster } from "react-hot-toast"
 import PlaceOrder from "./Pages/PlaceOrder/PlaceOrder.jsx"
 
-let x = createBrowserRouter([
+let x = createHashRouter([
   {
     path: '', element: <Layout />, children: [
       { index:true, element: <Home /> },
